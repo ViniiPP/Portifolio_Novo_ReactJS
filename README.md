@@ -47,6 +47,7 @@ npm install react-hook-form axios
 ```
 
 2. Configure seu `.env`:
+> API: https://www.emailjs.com 
 ```env
 REACT_APP_EMAILJS_SERVICE_ID= SEU SERVICE ID DA API
 REACT_APP_EMAILJS_TEMPLATE_ID= SEU TEMPLATE ID DA API
