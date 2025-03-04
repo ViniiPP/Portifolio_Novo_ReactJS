@@ -21,7 +21,7 @@ export const Info = () => {
         <i class='bx bx-git-branch about__icon'></i>
 
             <h3 className="about__title">Área</h3>
-            <span className="about__subtitle">DEV</span>
+            <span className="about__subtitle">Full Stack</span>
         </div>
 
     </div>
