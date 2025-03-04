@@ -61,7 +61,7 @@ export const Contact = () => {
             </div>
 
             <div className="contact__content">
-                <h3 className="contact__title">Ou escreva sobre o seu projeto</h3>
+                <h3 className="contact__title">Envie sua Mensagem</h3>
 
                 <form ref={form} onSubmit={sendEmail}
                 className="contact__form">
@@ -84,7 +84,7 @@ export const Contact = () => {
                     </div>
 
                     <div className="contact__form-div contact__form-area">
-                        <label className="contact__form-tag">Projeto</label>
+                        <label className="contact__form-tag">Mensagem</label>
                         <textarea 
                             name="project" 
                             cols="30" 
