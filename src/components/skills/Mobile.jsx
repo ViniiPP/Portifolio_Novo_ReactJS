@@ -72,7 +72,7 @@ const Mobile = () => {
     
                         <div>
                             <h3 className="skills__name">TypeScript</h3>
-                            <span className="skills__level">Intermediário</span>
+                            <span className="skills__level">Avançado</span>
                         </div>
                     </div>
     
