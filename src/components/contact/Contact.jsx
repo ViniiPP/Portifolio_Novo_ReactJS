@@ -90,7 +90,7 @@ export const Contact = () => {
                             cols="30" 
                             rows="10" 
                             className='contact__form-input' 
-                            placeholder='Escreva sobre seu projeto'>
+                            placeholder='Escreva sua mensagem'>
                         </textarea>
                     </div>
 
