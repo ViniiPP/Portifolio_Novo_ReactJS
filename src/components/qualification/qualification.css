@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: var(--mb-2);
+    position: relative;
 }
 
 .qualification__button {
@@ -14,9 +15,40 @@
     color: var(--title-color);
     margin: 0 var(--mb-1);
     cursor: pointer;
+    position: relative;
+    padding-bottom: 0.5rem;
+    transition: color 0.3s ease;
 }
 
-.qualification__button:hover {
+.qualification__button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--title-color-dark);
+    transition: width 0.3s ease;
+}
+
+.qualification__button.qualification__active::after {
+    width: 100%;
+}
+
+.qualification__button:hover::after {
+    width: 0;
+}
+
+.qualification__button.qualification__active:hover::after {
+    width: 100%;
+}
+
+.qualification__icon {
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+}
+
+.qualification__active {
     color: var(--title-color-dark);
 }
 

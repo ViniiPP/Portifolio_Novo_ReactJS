@@ -18,7 +18,6 @@ export const Contact = () => {
                 publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
             }
         )
-
         .then(() => {
           setMessageSent(true);
           e.target.reset();
@@ -71,7 +70,8 @@ export const Contact = () => {
                             type="text" 
                             name='name' 
                             className='contact__form-input' 
-                            placeholder='Escreva seu nome'/>
+                            placeholder='Escreva seu nome'
+                            required/>
                     </div>
 
                     <div className="contact__form-div">
@@ -80,7 +80,8 @@ export const Contact = () => {
                             type="email" 
                             name='email' 
                             className='contact__form-input' 
-                            placeholder='Escreva seu e-mail'/>
+                            placeholder='Escreva seu e-mail'
+                            required/>
                     </div>
 
                     <div className="contact__form-div contact__form-area">
@@ -90,14 +91,15 @@ export const Contact = () => {
                             cols="30" 
                             rows="10" 
                             className='contact__form-input' 
-                            placeholder='Escreva sua mensagem'>
+                            placeholder='Escreva sua mensagem'
+                            required>
                         </textarea>
                     </div>
 
-                    <button className="button button--flex">
+                    <button type="submit" className="button button--flex">
                         Enviar Mensagem
                         <svg
-                            class="button__icon"
+                            className="button__icon"
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
                             height="24"
@@ -114,11 +116,23 @@ export const Contact = () => {
                             ></path>
                         </svg>
                     </button>
-                    {/* Exibição da mensagem de sucesso */}
+                    
+                    {/* Modal de sucesso */}
                     {messageSent && (
-                        <p className="contact__success-message">
-                            ✅ Mensagem enviada com sucesso!
-                        </p>
+                        <div className="contact__success-modal">
+                            <div className="contact__success-content">
+                                <i className="bx bx-check-circle contact__success-icon"></i>
+                                <h3 className="contact__success-title">Mensagem Enviada!</h3>
+                                <p className="contact__success-description">Sua mensagem foi enviada com sucesso. Em breve retornarei o contato.</p>
+                                <button 
+                                    type="button"
+                                    className="contact__success-close"
+                                    onClick={() => setMessageSent(false)}
+                                >
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
                     )}
                 </form>
             </div>

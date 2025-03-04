@@ -57,12 +57,13 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
     order: 1;
     justify-self: center;
     width: 300px;
     height: 300px;
     animation: profile__animate 8s ease-in-out infinite 1s;
+    
 }
 
 @keyframes profile__animate {
@@ -135,7 +136,7 @@
     .home__img {
         width: 250px;
         height: 250px;
-        box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);;
     }
 
     .home__scroll {
@@ -160,7 +161,7 @@
     }
 
     .home__img {
-        box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
         width: 200px;
         height: 200px;
     }
