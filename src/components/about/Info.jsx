@@ -14,7 +14,7 @@ export const Info = () => {
         <i class='bx bx-briefcase about__icon'></i>
 
             <h3 className="about__title">Completado</h3>
-            <span className="about__subtitle">+20 Projetos</span>
+            <span className="about__subtitle">+25 Projetos</span>
         </div>
 
         <div className="about__box">
