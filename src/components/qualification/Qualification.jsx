@@ -155,7 +155,7 @@ export const Qualification = () => {
                             <h3 className="qualification__title">Estágio em Qualidade de Software</h3>
                             <span className="qualification__subtitle">Compass UOL</span>
                             <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"></i> 11/2024 - Presente
+                                <i className="uil uil-calendar-alt"></i> 11/2024 - 04/2025
                             </div>
                         </div>
 
