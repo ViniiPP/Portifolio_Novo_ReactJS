@@ -126,7 +126,7 @@ img {
 .section__subtitle {
   display: block;
   font-size: var(--small-font-size);
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .section__title,

@@ -66,6 +66,15 @@ export const Header = () => {
                 <i className="uil uil-graduation-cap nav__icon"></i> Qualificações
               </a>
             </li>
+            
+            <li className="nav__item">
+              <a href="#projects" onClick={ () => setActiveNav('#projects') } 
+                className={activeNav === "#projects" 
+                  ? "nav__link active-link" 
+                  : "nav__link"}>
+                <i className="uil uil-scenery nav__icon"></i> Projetos
+              </a>
+            </li>
 
             <li className="nav__item">
               <a href="#contact" onClick={ () => setActiveNav('#contact') } 

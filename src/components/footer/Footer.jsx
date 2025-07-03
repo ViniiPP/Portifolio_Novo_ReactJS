@@ -15,7 +15,7 @@ export const Footer = () => {
                 </li>
 
                 <li>
-                    <a href="#qualification" className="footer__link">Qualificações</a>
+                    <a href="#projects" className="footer__link">Projetos</a>
                 </li>
 
                 <li>
@@ -30,7 +30,7 @@ export const Footer = () => {
                     target='_blank'
                     rel="noopener noreferrer"
                     >
-                    <i class="uil uil-instagram"></i>
+                    <i className="uil uil-instagram"></i>
                 </a>
 
                 <a 
@@ -39,7 +39,7 @@ export const Footer = () => {
                     target='_blank'
                     rel="noopener noreferrer"
                     >
-                    <i class="uil uil-linkedin"></i>
+                    <i className="uil uil-linkedin"></i>
                 </a>
 
                 <a 
@@ -48,7 +48,7 @@ export const Footer = () => {
                     target='_blank'
                     rel="noopener noreferrer"
                     >
-                    <i class="uil uil-github-alt"></i>
+                    <i className="uil uil-github-alt"></i>
                 </a>
             </div>
 
