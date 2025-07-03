@@ -60,6 +60,7 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
     order: 1;
     justify-self: center;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     width: 300px;
     height: 300px;
     animation: profile__animate 8s ease-in-out infinite 1s;
