@@ -145,7 +145,7 @@ export const Qualification = () => {
                             <h3 className="qualification__title">Moderador</h3>
                             <span className="qualification__subtitle">Twitch</span>
                             <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"></i> 05/2021 - Presente
+                                <i className="uil uil-calendar-alt"></i> 05/2021 - 04/2025
                             </div>
                         </div>
                     </div>
@@ -155,7 +155,7 @@ export const Qualification = () => {
                             <h3 className="qualification__title">Estágio em Qualidade de Software</h3>
                             <span className="qualification__subtitle">Compass UOL</span>
                             <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"></i> 11/2024 - 05/2025
+                                <i className="uil uil-calendar-alt"></i> 11/2024 - 04/2025
                             </div>
                         </div>
 
