@@ -12,7 +12,6 @@ import QrCodeImg from './Qrcode.png';
 import QrCodeImg02 from './Qrcode02.png';
 import TodoListImg from './todoList.png';
 import TodoListImg02 from './todoList02.png';
-import TodoListImg03 from './todoList03.png';
 import SpotifyImg from './telaSpotify.png';
 import GoobarLogo from './GoobarLogo.png';
 import GoobarTela01 from './goobarTela01.png';
@@ -69,7 +68,6 @@ export {
     QrCodeImg02,
     TodoListImg,
     TodoListImg02,
-    TodoListImg03,
     SpotifyImg,
     GoobarLogo,
     GoobarTela01,

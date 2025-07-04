@@ -13,7 +13,6 @@ import {
     QrCodeImg02,
     TodoListImg,
     TodoListImg02,
-    TodoListImg03,
     SpotifyImg,
     GoobarLogo,
     SpotifyLogo,
@@ -97,7 +96,7 @@ export const projectsData = [
     {
         id: 5,
         thumbnail: TodoListImg,
-        images: [TodoListImg, TodoListImg02, TodoListImg03],
+        images: [TodoListImg, TodoListImg02],
         title: "Lista de Tarefas",
         category: "Web",
         description: "Uma aplicação de lista de tarefas que permite aos usuários adicionar, remover e marcar tarefas como concluídas. Desenvolvida com HTML, CSS e JavaScript, com foco na usabilidade e organização.",
