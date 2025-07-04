@@ -1,25 +1,63 @@
-import ClimaImg from '../../assets/clima.png'
-import Clima02Img from '../../assets/clima02.png';
-import DashboardImg from '../../assets/dashboard.jpg';
-import GeradorSenhas01Img from '../../assets/GeradorSenhas.jpg';
-import GeradorSenhas02Img from '../../assets/GeradorSenhas02.jpg';
-import GeradorSenhas03Img from '../../assets/GeradorSenhas03.jpg';
-import GeradorSenhas04Img from '../../assets/GeradorSenhas04.jpg';
-import HardwareImg from '../../assets/hardware.jpg';
-import HardwareImg02 from '../../assets/hardware02.jpg';
-import DashaboardQrCodeImg from '../../assets/DashboardQrCode.jpg';
-import QrCodeImg from '../../assets/Qrcode.png';
-import QrCodeImg02 from '../../assets/Qrcode02.png';
-import TodoListImg from '../../assets/todoList.png';
-import TodoListImg02 from '../../assets/todoList02.png';
-import TodoListImg03 from '../../assets/todoList03.png';
-import SpotifyImg from '../../assets/telaSpotify.png';
+import {
+    ClimaImg,
+    Clima02Img,
+    DashboardImg,
+    GeradorSenhas01Img,
+    GeradorSenhas02Img,
+    GeradorSenhas03Img,
+    GeradorSenhas04Img,
+    HardwareImg,
+    HardwareImg02,
+    DashaboardQrCodeImg,
+    QrCodeImg,
+    QrCodeImg02,
+    TodoListImg,
+    TodoListImg02,
+    TodoListImg03,
+    SpotifyImg,
+    GoobarLogo,
+    SpotifyLogo,
+    GoobarTela01,
+    GoobarTela02,
+    GoobarTela03,
+    GoobarTela04,
+    GoobarTela05,
+    GoobarTela06,
+    GoobarTela07,
+    GoobarTela08,
+    GoobarTela09,
+    GoobarTela10,
+    GoobarTela11,
+    NotaFiscalLogo,
+    NotaFiscal01,
+    NotaFiscal02,
+    NotaFiscal03,
+    NotaFiscal04,
+    NotaFiscal05,
+    NotaFiscal06,
+    NotaFiscal07,
+    NotaFiscal08,
+    NotaFiscal09,
+    NotaFiscal10,
+    DengueAlerta01,
+    DengueAlerta02,
+    DengueAlerta03,
+    DengueAlerta04,
+    DengueAlerta05,
+    DengueAlerta06,
+    DengueAlerta07,
+    DengueAlerta08,
+    DengueAlertaLogo,
+    CuraLogo,
+    GeradorSenhasLogo
+} from '../../assets';
+
 
 export const projectsData = [
     {
       id: 1,
-      thumbnail: DashboardImg,
-      images: [DashboardImg, DashaboardQrCodeImg, HardwareImg, HardwareImg02],
+      thumbnail: CuraLogo,
+      images: [CuraLogo, DashboardImg, DashaboardQrCodeImg, HardwareImg, HardwareImg02],
       title: "Deck Hospitalar - Gestão e Monitoramento de Pacientes",
       category: "Web",
       description: "Sistema da Web para gerenciamento de pacientes hospitalares e monitoramento de ambiente em tempo real através de sensores de IoT, com funcionalidade completa do CRUD, front-end em HTML/CSS/JS e back-end em Java com bota de primavera.",
@@ -38,7 +76,7 @@ export const projectsData = [
     },
     {
         id: 3,
-        thumbnail: GeradorSenhas01Img,
+        thumbnail: GeradorSenhasLogo,
         images: [GeradorSenhas01Img, GeradorSenhas02Img, GeradorSenhas03Img, GeradorSenhas04Img],
         title: "Gerador de Senhas",
         category: "Mobile",
@@ -68,7 +106,7 @@ export const projectsData = [
     },
     {
         id: 6,
-        thumbnail: SpotifyImg,
+        thumbnail: SpotifyLogo,
         images: [SpotifyImg],
         title: "Spotify Clone",
         category: "Web",
@@ -76,6 +114,37 @@ export const projectsData = [
         demo_link: "https://viniipp.github.io/Spotify/",
         github_link: "https://github.com/ViniiPP/Spotify"
     },
+    {
+        id: 7,
+        thumbnail: NotaFiscalLogo,
+        images: [NotaFiscal01, NotaFiscal02, NotaFiscal03, NotaFiscal04, NotaFiscal10, NotaFiscal05, NotaFiscal06, NotaFiscal07, NotaFiscal08, NotaFiscal09],
+        title: "New - Nota Fiscal Gaúcha",
+        category: "Design",
+        description: "Protótipo de interface para o sistema de Nota Fiscal Gaúcha, desenvolvido no Figma. O projeto inclui telas de login, dashboard, emissão de notas e relatórios, com foco na usabilidade e estética.",
+        demo_link: "https://www.figma.com/proto/TRsoovMyXV9ClchAMPinSV/Nota-Fiscal-Ga%C3%BAcha---PROTOTIPA%C3%87%C3%83O--Vini-?page-id=0%3A1&node-id=151-520&viewport=844%2C671%2C0.26&t=JYMTDg6BoVdAuTLU-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=151%3A520",
+        github_link: "https://www.figma.com/design/TRsoovMyXV9ClchAMPinSV/Nota-Fiscal-Ga%C3%BAcha---PROTOTIPA%C3%87%C3%83O--Vini-?node-id=0-1&t=XQHiWkVqthd4FWtx-1"
+    },
+    {
+        id: 8,
+        thumbnail: GoobarLogo,
+        images: [GoobarLogo, GoobarTela03, GoobarTela04, GoobarTela01, GoobarTela11, GoobarTela02, GoobarTela05, GoobarTela06 ,GoobarTela07, GoobarTela08, GoobarTela09, GoobarTela10],
+        title: "Goobar - App de geolocalização de bares e restaurantes",
+        category: "Design",
+        description: "Design de interface para o aplicativo Goobar, que permite aos usuários encontrar bares e restaurantes próximos. Inclui telas de login, registro, mapa e perfil do usuário. Focado na usabilidade e estética, utilizando ferramentas de design como Figma.",
+        demo_link: "https://www.figma.com/design/qyekyrlABGyrhMYkJa0pGU/Wireframe?node-id=0-1&t=lCZCup15pR16l94D-1",
+        github_link: "https://www.figma.com/design/qyekyrlABGyrhMYkJa0pGU/Wireframe?node-id=0-1&t=lCZCup15pR16l94D-1"
+    },
+    {
+        id: 9,
+        thumbnail: DengueAlertaLogo,
+        images: [DengueAlertaLogo, DengueAlerta01, DengueAlerta02, DengueAlerta03, DengueAlerta04, DengueAlerta05, DengueAlerta06, DengueAlerta07, DengueAlerta08],
+        title: "Dengue Alerta - Aplicativo de Monitoramento de Dengue",
+        category: "Design",
+        description: "Protótipo de aplicativo móvel para monitoramento de casos de dengue, desenvolvido no Figma. O projeto inclui telas de cadastro, dashboard, mapa de casos e notificações, com foco na usabilidade e estética.",
+        demo_link: "https://www.figma.com/proto/gyYDoykifIYwDFXjRvEUbr/AEDES-TRACKER?page-id=0%3A1&node-id=200-1020&p=f&viewport=896%2C519%2C0.27&t=9MZLD3kdbw5NZig6-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=244%3A1908",
+        github_link: "https://www.figma.com/design/gyYDoykifIYwDFXjRvEUbr/AEDES-TRACKER?node-id=0-1&t=MZFdZWRGxwqbB0DU-1"
+    },
+    
   ];
 
   export const projectsNav = [

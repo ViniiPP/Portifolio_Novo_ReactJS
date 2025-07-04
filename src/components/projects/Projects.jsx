@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef  } from 'react';
+import React, { useEffect, useState } from 'react';
 import { projectsData, projectsNav } from './Data';
 import { WorkItems } from './WorkItems';
 import "./projects.css";
@@ -27,7 +27,7 @@ export const Projects = () => {
   return (
     <section className="projects section" id="projects">
         <h2 className="section__title">Projetos</h2>
-        <span className="section__subtitle">Meus trabalhos recentes</span>
+        <span className="section__subtitle">Meus projetos</span>
 
         <div className="projects__filters">
             {projectsNav.map((item, index) => {

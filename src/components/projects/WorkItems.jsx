@@ -1,27 +1,30 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 
 export const WorkItems = ({item}) => {
     const [toggleState, setToggleState] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const modalRef = useRef(null);
 
-    const toggleModal = () => {
-        setToggleState(!toggleState);
+    // Envolvemos a função com useCallback
+    const toggleModal = useCallback(() => {
+        // Usamos a forma funcional do setState para não depender de 'toggleState'
+        setToggleState(prev => !prev); 
         if (!toggleState) {
             setCurrentImageIndex(0);
         }
-    }
+    }, [toggleState]); // A dependência aqui é intencional para a lógica de resetar o index
 
-    const nextImage = (e) => {
+    const nextImage = useCallback((e) => {
         e.stopPropagation(); 
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % item.images.length);
-    }
+    }, [item.images.length]);
 
-    const prevImage = (e) => {
+    const prevImage = useCallback((e) => {
         e.stopPropagation();
         setCurrentImageIndex((prevIndex) => (prevIndex - 1 + item.images.length) % item.images.length);
-    }
+    }, [item.images.length]);
 
+    // O useEffect agora usa a versão memorizada de toggleModal
     useEffect(() => {
         const handleOutsideClick = (event) => {
             if (!toggleState || (modalRef.current && modalRef.current.contains(event.target))) {
@@ -52,10 +55,9 @@ export const WorkItems = ({item}) => {
             <div className="projects__modal-content" ref={modalRef}>
                 <i onClick={toggleModal} className="uil uil-times projects__modal-close"></i>
 
-                {/* --- MUDANÇA PRINCIPAL AQUI --- */}
                 <div className="projects__modal-gallery">
                     <div 
-                        className="projects__modal-gallery-strip" 
+                        className="projects__modal-gallery-strip has-transition"
                         style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
                     >
                         {item.images.map((imgSrc, index) => (
@@ -75,7 +77,6 @@ export const WorkItems = ({item}) => {
                         </>
                     )}
                 </div>
-                {/* --- FIM DA MUDANÇA --- */}
 
                 <h3 className="projects__modal-title">{item.title}</h3>
                 <p className="projects__modal-description">{item.description}</p>
