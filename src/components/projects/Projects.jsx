@@ -27,7 +27,7 @@ export const Projects = () => {
   return (
     <section className="projects section" id="projects">
         <h2 className="section__title">Projetos</h2>
-        <span className="section__subtitle">Meus projetos</span>
+        <span className="section__subtitle">Meus principais projetos</span>
 
         <div className="projects__filters">
             {projectsNav.map((item, index) => {
