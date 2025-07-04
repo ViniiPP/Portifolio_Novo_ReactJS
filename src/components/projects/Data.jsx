@@ -59,7 +59,7 @@ export const projectsData = [
       images: [CuraLogo, DashboardImg, DashaboardQrCodeImg, HardwareImg, HardwareImg02],
       title: "Deck Hospitalar - Gestão e Monitoramento de Pacientes",
       category: "Web",
-      description: "Sistema da Web para gerenciamento de pacientes hospitalares e monitoramento de ambiente em tempo real através de sensores de IoT, com funcionalidade completa do CRUD, front-end em HTML/CSS/JS e back-end em Java com bota de primavera.",
+      description: "Sistema da Web para gerenciamento de pacientes hospitalares e monitoramento de ambiente em tempo real através de sensores de IoT, com funcionalidade completa do CRUD, front-end em HTML/CSS/JS e back-end em Java SpringBoot usando WebSockets.",
       demo_link: "https://github.com/ViniiPP/Deck-Hospitalar",
       github_link: "https://github.com/ViniiPP/Deck-Hospitalar"
     },
