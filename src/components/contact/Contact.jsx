@@ -52,9 +52,9 @@ export const Contact = () => {
                         <i className="bx bxl-instagram contact__card-icon"></i>
 
                         <h3 className="contact__card-title">Instagram</h3>
-                        <span className="contact__card-data">@eu_viniipp</span>
+                        <span className="contact__card-data">@viniipp</span>
 
-                        <a href="https://www.instagram.com/eu_viniipp" rel="noopener noreferrer" className="contact__button">Seguir <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                        <a href="https://www.instagram.com/viniipp" rel="noopener noreferrer" className="contact__button">Seguir <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                     </div>
                 </div>
             </div>

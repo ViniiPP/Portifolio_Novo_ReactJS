@@ -25,7 +25,7 @@ export const Footer = () => {
 
             <div className="footer__social">
                 <a 
-                    href="https://www.instagram.com/eu_viniipp" 
+                    href="https://www.instagram.com/viniipp" 
                     className="footer__social-link" 
                     target='_blank'
                     rel="noopener noreferrer"
