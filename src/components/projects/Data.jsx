@@ -48,7 +48,8 @@ import {
     DengueAlerta08,
     DengueAlertaLogo,
     CuraLogo,
-    GeradorSenhasLogo
+    GeradorSenhasLogo,
+    AgroSoja_Logo, AgroSoja1, AgroSoja2, AgroSoja3, AgroSoja4, AgroSoja6, AgroSoja7, AgroSoja8, AgroSoja9, AgroSoja10, AgroSoja11, AgroSoja12, AgroSoja13, AgroSoja14, AgroSoja15, AgroSoja16
 } from '../../assets';
 
 
@@ -63,8 +64,18 @@ export const projectsData = [
       demo_link: "https://github.com/ViniiPP/Deck-Hospitalar",
       github_link: "https://github.com/ViniiPP/Deck-Hospitalar"
     },
-    {
+        {
       id: 2,
+      thumbnail: AgroSoja_Logo,
+      images: [AgroSoja_Logo, AgroSoja1, AgroSoja2, AgroSoja3, AgroSoja4, AgroSoja6, AgroSoja7, AgroSoja8, AgroSoja9, AgroSoja10, AgroSoja11, AgroSoja12, AgroSoja13, AgroSoja14, AgroSoja15, AgroSoja16],
+      title: "AgroSoja - Landing Page Automatizada para Agricultura de Precisão",
+      category: "Web",
+      description: "Landing page responsiva para empresa de agricultura de precisão, com design moderno e funcionalidade de formulário de contato integrado ao WhatsApp. Desenvolvida com NextJS, TailwindCSS, hospedada na Vercel, usando também Firebase para armazenamento de dados de Login. e Cloudinary para hospedagem de imagens.",
+      demo_link: "https://leading-page-agro.vercel.app",
+      github_link: "https://github.com/ViniiPP/landing-Page-Agro"
+    },
+    {
+      id: 3,
       thumbnail: ClimaImg,
       images: [ClimaImg, Clima02Img],
       title: "Aplicativo de Previsão do Tempo",
@@ -74,7 +85,7 @@ export const projectsData = [
       github_link: "https://github.com/ViniiPP/App-de-Previsao-do-Tempo"
     },
     {
-        id: 3,
+        id: 4,
         thumbnail: GeradorSenhasLogo,
         images: [GeradorSenhas01Img, GeradorSenhas02Img, GeradorSenhas03Img, GeradorSenhas04Img],
         title: "Gerador de Senhas",
@@ -84,7 +95,7 @@ export const projectsData = [
         github_link: "https://github.com/ViniiPP/App-Gerenciador-de-Senhas"
     },
     {
-        id: 4,
+        id: 5,
         thumbnail: QrCodeImg,
         images: [QrCodeImg, QrCodeImg02],
         title: "Gerador de QR Code",
@@ -94,7 +105,7 @@ export const projectsData = [
         github_link: "https://github.com/ViniiPP/Gerador-de-QR-Code"
     },
     {
-        id: 5,
+        id: 6,
         thumbnail: TodoListImg,
         images: [TodoListImg, TodoListImg02],
         title: "Lista de Tarefas",
@@ -104,7 +115,7 @@ export const projectsData = [
         github_link: "https://github.com/ViniiPP/ToDo-List"
     },
     {
-        id: 6,
+        id: 7,
         thumbnail: SpotifyLogo,
         images: [SpotifyImg],
         title: "Spotify Clone",
@@ -114,7 +125,7 @@ export const projectsData = [
         github_link: "https://github.com/ViniiPP/Spotify"
     },
     {
-        id: 7,
+        id: 8,
         thumbnail: NotaFiscalLogo,
         images: [NotaFiscal01, NotaFiscal02, NotaFiscal03, NotaFiscal04, NotaFiscal10, NotaFiscal05, NotaFiscal06, NotaFiscal07, NotaFiscal08, NotaFiscal09],
         title: "New - Nota Fiscal Gaúcha",
@@ -124,7 +135,7 @@ export const projectsData = [
         github_link: "https://www.figma.com/design/TRsoovMyXV9ClchAMPinSV/Nota-Fiscal-Ga%C3%BAcha---PROTOTIPA%C3%87%C3%83O--Vini-?node-id=0-1&t=XQHiWkVqthd4FWtx-1"
     },
     {
-        id: 8,
+        id: 9,
         thumbnail: GoobarLogo,
         images: [GoobarLogo, GoobarTela03, GoobarTela04, GoobarTela01, GoobarTela11, GoobarTela02, GoobarTela05, GoobarTela06 ,GoobarTela07, GoobarTela08, GoobarTela09, GoobarTela10],
         title: "Goobar - App de geolocalização de bares e restaurantes",
@@ -134,7 +145,7 @@ export const projectsData = [
         github_link: "https://www.figma.com/design/qyekyrlABGyrhMYkJa0pGU/Wireframe?node-id=0-1&t=lCZCup15pR16l94D-1"
     },
     {
-        id: 9,
+        id: 10,
         thumbnail: DengueAlertaLogo,
         images: [DengueAlertaLogo, DengueAlerta01, DengueAlerta02, DengueAlerta03, DengueAlerta04, DengueAlerta05, DengueAlerta06, DengueAlerta07, DengueAlerta08],
         title: "Dengue Alerta - Aplicativo de Monitoramento de Dengue",

@@ -48,6 +48,25 @@ import CuraLogo from './CuraLogo.png';
 import GeradorSenhasLogo from './GeradorSenhasLogo.png';
 import SpotifyLogo from './SpotifyLogo.jpg';
 import NotaFiscal10 from './notaFiscal10.png';
+import AgroSoja_Logo from './AgroSoja_Logo.png';
+import AgroSoja1 from './AgroSoja1.jpg';
+import AgroSoja2 from './AgroSoja2.jpg';
+import AgroSoja3 from './AgroSoja3.jpg';
+import AgroSoja4 from './AgroSoja4.jpg';
+import AgroSoja6 from './AgroSoja6.jpg';
+import AgroSoja7 from './AgroSoja7.jpg';
+import AgroSoja8 from './AgroSoja8.jpg';
+import AgroSoja9 from './AgroSoja9.jpg';
+import AgroSoja10 from './AgroSoja10.jpg';
+import AgroSoja11 from './AgroSoja11.jpg';
+import AgroSoja12 from './AgroSoja12.jpg';
+import AgroSoja13 from './AgroSoja13.jpg';
+import AgroSoja14 from './AgroSoja14.jpg';
+import AgroSoja15 from './AgroSoja15.jpg';
+import AgroSoja16 from './AgroSoja16.jpg';
+
+
+
 
 // Exporta todas as imagens em um único objeto
 export {
@@ -100,5 +119,22 @@ export {
     DengueAlerta06,
     DengueAlerta07,
     DengueAlerta08,
-    DengueAlertaLogo
+    DengueAlertaLogo,
+    AgroSoja_Logo,
+    AgroSoja1,
+    AgroSoja2,
+    AgroSoja3,
+    AgroSoja4,
+    AgroSoja6,
+    AgroSoja7,
+    AgroSoja8,
+    AgroSoja9,
+    AgroSoja10,
+    AgroSoja11,
+    AgroSoja12,
+    AgroSoja13,
+    AgroSoja14,
+    AgroSoja15,
+    AgroSoja16
+
 };
