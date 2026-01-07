@@ -80,7 +80,7 @@ export const projectsData = [
       thumbnail: NutriHub_Logo,
       images: [NutriHub_Logo, nutrihub01, nutrihub02, nutrihub03, nutrihub04, nutrihub05, nutrihub06, nutrihub07, nutrihub08, nutrihub09, nutrihub10, nutrihub11],
       title: "NutriHub - Aplicativo de Nutrição e Dieta Personalizada - SaaS",
-      category: "Mobile",
+      category: "Design",
       description: "Aplicativo de Nutrição e Dieta Personalizada, com recursos de acompanhamento de dieta e nutrição, e gerenciamento de alimentos e refeições.",
       demo_link: "https://www.linkedin.com/feed/update/urn:li:activity:7356757288855994368/",
       github_link: "https://www.linkedin.com/feed/update/urn:li:activity:7356757288855994368/"
