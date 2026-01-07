@@ -49,7 +49,8 @@ import {
     DengueAlertaLogo,
     CuraLogo,
     GeradorSenhasLogo,
-    AgroSoja_Logo, AgroSoja1, AgroSoja2, AgroSoja3, AgroSoja4, AgroSoja6, AgroSoja7, AgroSoja8, AgroSoja9, AgroSoja10, AgroSoja11, AgroSoja12, AgroSoja13, AgroSoja14, AgroSoja15, AgroSoja16
+    AgroSoja_Logo, AgroSoja1, AgroSoja2, AgroSoja3, AgroSoja4, AgroSoja6, AgroSoja7, AgroSoja8, AgroSoja9, AgroSoja10, AgroSoja11, AgroSoja12, AgroSoja13, AgroSoja14, AgroSoja15, AgroSoja16,
+    nutrihub01, nutrihub02, nutrihub03, nutrihub04, nutrihub05, nutrihub06, nutrihub07, nutrihub08, nutrihub09, nutrihub10, nutrihub11, NutriHub_Logo
 } from '../../assets';
 
 
@@ -64,7 +65,7 @@ export const projectsData = [
       demo_link: "https://github.com/ViniiPP/Deck-Hospitalar",
       github_link: "https://github.com/ViniiPP/Deck-Hospitalar"
     },
-        {
+    {
       id: 2,
       thumbnail: AgroSoja_Logo,
       images: [AgroSoja_Logo, AgroSoja1, AgroSoja2, AgroSoja3, AgroSoja4, AgroSoja6, AgroSoja7, AgroSoja8, AgroSoja9, AgroSoja10, AgroSoja11, AgroSoja12, AgroSoja13, AgroSoja14, AgroSoja15, AgroSoja16],
@@ -76,56 +77,16 @@ export const projectsData = [
     },
     {
       id: 3,
-      thumbnail: ClimaImg,
-      images: [ClimaImg, Clima02Img],
-      title: "Aplicativo de Previsão do Tempo",
-      category: "Web",
-      description: "Um aplicativo que fornece previsões do tempo em tempo real, utilizando a API OpenWeatherMap. Desenvolvido com HTML, CSS e JavaScript, com foco na responsividade e usabilidade.",
-      demo_link: "https://viniipp.github.io/App-de-Previsao-do-Tempo/",
-      github_link: "https://github.com/ViniiPP/App-de-Previsao-do-Tempo"
+      thumbnail: NutriHub_Logo,
+      images: [NutriHub_Logo, nutrihub01, nutrihub02, nutrihub03, nutrihub04, nutrihub05, nutrihub06, nutrihub07, nutrihub08, nutrihub09, nutrihub10, nutrihub11],
+      title: "NutriHub - Aplicativo de Nutrição e Dieta Personalizada - SaaS",
+      category: "Mobile",
+      description: "Aplicativo de Nutrição e Dieta Personalizada, com recursos de acompanhamento de dieta e nutrição, e gerenciamento de alimentos e refeições.",
+      demo_link: "https://www.linkedin.com/feed/update/urn:li:activity:7356757288855994368/",
+      github_link: "https://www.linkedin.com/feed/update/urn:li:activity:7356757288855994368/"
     },
     {
         id: 4,
-        thumbnail: GeradorSenhasLogo,
-        images: [GeradorSenhas01Img, GeradorSenhas02Img, GeradorSenhas03Img, GeradorSenhas04Img],
-        title: "Gerador de Senhas",
-        category: "Mobile",
-        description: "Um aplicativo móvel para geração de senhas seguras, com opções de personalização de tamanho e complexidade. Desenvolvido com React Native, oferecendo uma interface amigável e funcional.",
-        demo_link: "https://github.com/ViniiPP/App-Gerenciador-de-Senhas",
-        github_link: "https://github.com/ViniiPP/App-Gerenciador-de-Senhas"
-    },
-    {
-        id: 5,
-        thumbnail: QrCodeImg,
-        images: [QrCodeImg, QrCodeImg02],
-        title: "Gerador de QR Code",
-        category: "Web",
-        description: "Um aplicativo para geração de QR Codes personalizados, permitindo a criação de códigos para URLs, textos e outros dados. Desenvolvido com HTML, CSS e JavaScript, com foco na simplicidade e eficiência.",
-        demo_link: "https://viniipp.github.io/Gerador-de-QR-Code/",
-        github_link: "https://github.com/ViniiPP/Gerador-de-QR-Code"
-    },
-    {
-        id: 6,
-        thumbnail: TodoListImg,
-        images: [TodoListImg, TodoListImg02],
-        title: "Lista de Tarefas",
-        category: "Web",
-        description: "Uma aplicação de lista de tarefas que permite aos usuários adicionar, remover e marcar tarefas como concluídas. Desenvolvida com HTML, CSS e JavaScript, com foco na usabilidade e organização.",
-        demo_link: "https://viniipp.github.io/ToDo-List/",
-        github_link: "https://github.com/ViniiPP/ToDo-List"
-    },
-    {
-        id: 7,
-        thumbnail: SpotifyLogo,
-        images: [SpotifyImg],
-        title: "Spotify Clone",
-        category: "Web",
-        description: "Um clone da interface do Spotify, permitindo aos usuários navegar por músicas e playlists. Desenvolvido com HTML, CSS e JavaScript, com foco na estética e funcionalidade.",
-        demo_link: "https://viniipp.github.io/Spotify/",
-        github_link: "https://github.com/ViniiPP/Spotify"
-    },
-    {
-        id: 8,
         thumbnail: NotaFiscalLogo,
         images: [NotaFiscal01, NotaFiscal02, NotaFiscal03, NotaFiscal04, NotaFiscal10, NotaFiscal05, NotaFiscal06, NotaFiscal07, NotaFiscal08, NotaFiscal09],
         title: "New - Nota Fiscal Gaúcha",
@@ -135,7 +96,7 @@ export const projectsData = [
         github_link: "https://www.figma.com/design/TRsoovMyXV9ClchAMPinSV/Nota-Fiscal-Ga%C3%BAcha---PROTOTIPA%C3%87%C3%83O--Vini-?node-id=0-1&t=XQHiWkVqthd4FWtx-1"
     },
     {
-        id: 9,
+        id: 5,
         thumbnail: GoobarLogo,
         images: [GoobarLogo, GoobarTela03, GoobarTela04, GoobarTela01, GoobarTela11, GoobarTela02, GoobarTela05, GoobarTela06 ,GoobarTela07, GoobarTela08, GoobarTela09, GoobarTela10],
         title: "Goobar - App de geolocalização de bares e restaurantes",
@@ -145,7 +106,7 @@ export const projectsData = [
         github_link: "https://www.figma.com/design/qyekyrlABGyrhMYkJa0pGU/Wireframe?node-id=0-1&t=lCZCup15pR16l94D-1"
     },
     {
-        id: 10,
+        id: 6,
         thumbnail: DengueAlertaLogo,
         images: [DengueAlertaLogo, DengueAlerta01, DengueAlerta02, DengueAlerta03, DengueAlerta04, DengueAlerta05, DengueAlerta06, DengueAlerta07, DengueAlerta08],
         title: "Dengue Alerta - Aplicativo de Monitoramento de Dengue",
@@ -154,7 +115,56 @@ export const projectsData = [
         demo_link: "https://www.figma.com/proto/gyYDoykifIYwDFXjRvEUbr/AEDES-TRACKER?page-id=0%3A1&node-id=200-1020&p=f&viewport=896%2C519%2C0.27&t=9MZLD3kdbw5NZig6-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=244%3A1908",
         github_link: "https://www.figma.com/design/gyYDoykifIYwDFXjRvEUbr/AEDES-TRACKER?node-id=0-1&t=MZFdZWRGxwqbB0DU-1"
     },
-    
+    {
+      id: 7,
+      thumbnail: ClimaImg,
+      images: [ClimaImg, Clima02Img],
+      title: "Aplicativo de Previsão do Tempo",
+      category: "Web",
+      description: "Um aplicativo que fornece previsões do tempo em tempo real, utilizando a API OpenWeatherMap. Desenvolvido com HTML, CSS e JavaScript, com foco na responsividade e usabilidade.",
+      demo_link: "https://viniipp.github.io/App-de-Previsao-do-Tempo/",
+      github_link: "https://github.com/ViniiPP/App-de-Previsao-do-Tempo"
+    },
+    {
+        id: 8,
+        thumbnail: GeradorSenhasLogo,
+        images: [GeradorSenhas01Img, GeradorSenhas02Img, GeradorSenhas03Img, GeradorSenhas04Img],
+        title: "Gerador de Senhas",
+        category: "Mobile",
+        description: "Um aplicativo móvel para geração de senhas seguras, com opções de personalização de tamanho e complexidade. Desenvolvido com React Native, oferecendo uma interface amigável e funcional. Feito com o Sujeito Programador.",
+        demo_link: "https://github.com/ViniiPP/App-Gerenciador-de-Senhas",
+        github_link: "https://github.com/ViniiPP/App-Gerenciador-de-Senhas"
+    },
+    {
+        id: 9,
+        thumbnail: QrCodeImg,
+        images: [QrCodeImg, QrCodeImg02],
+        title: "Gerador de QR Code",
+        category: "Web",
+        description: "Um aplicativo para geração de QR Codes personalizados, permitindo a criação de códigos para URLs, textos e outros dados. Desenvolvido com HTML, CSS e JavaScript, com foco na simplicidade e eficiência.",
+        demo_link: "https://viniipp.github.io/Gerador-de-QR-Code/",
+        github_link: "https://github.com/ViniiPP/Gerador-de-QR-Code"
+    },
+    {
+        id: 10,
+        thumbnail: TodoListImg,
+        images: [TodoListImg, TodoListImg02],
+        title: "Lista de Tarefas",
+        category: "Web",
+        description: "Uma aplicação de lista de tarefas que permite aos usuários adicionar, remover e marcar tarefas como concluídas. Desenvolvida com HTML, CSS e JavaScript, com foco na usabilidade e organização.",
+        demo_link: "https://viniipp.github.io/ToDo-List/",
+        github_link: "https://github.com/ViniiPP/ToDo-List"
+    },
+    {
+        id: 11,
+        thumbnail: SpotifyLogo,
+        images: [SpotifyImg],
+        title: "Spotify Clone",
+        category: "Web",
+        description: "Um clone da interface do Spotify, permitindo aos usuários navegar por músicas e playlists. Desenvolvido com HTML, CSS e JavaScript, com foco na estética e funcionalidade.",
+        demo_link: "https://viniipp.github.io/Spotify/",
+        github_link: "https://github.com/ViniiPP/Spotify"
+    },
   ];
 
   export const projectsNav = [

@@ -64,7 +64,18 @@ import AgroSoja13 from './AgroSoja13.jpg';
 import AgroSoja14 from './AgroSoja14.jpg';
 import AgroSoja15 from './AgroSoja15.jpg';
 import AgroSoja16 from './AgroSoja16.jpg';
-
+import nutrihub01 from './nutrihub01.jpg';
+import nutrihub02 from './nutrihub02.jpg';
+import nutrihub03 from './nutrihub03.jpg';
+import nutrihub04 from './nutrihub04.jpg';
+import nutrihub05 from './nutrihub05.jpg';
+import nutrihub06 from './nutrihub06.jpg';
+import nutrihub07 from './nutrihub07.jpg';
+import nutrihub08 from './nutrihub08.jpg';
+import nutrihub09 from './nutrihub09.jpg';
+import nutrihub10 from './nutrihub10.jpg';
+import nutrihub11 from './nutrihub10.jpg';
+import NutriHub_Logo from './NutriHub_Logo.png';
 
 
 
@@ -135,6 +146,18 @@ export {
     AgroSoja13,
     AgroSoja14,
     AgroSoja15,
-    AgroSoja16
+    AgroSoja16,
+    nutrihub01,
+    nutrihub02,
+    nutrihub03,
+    nutrihub04,
+    nutrihub05,
+    nutrihub06,
+    nutrihub07,
+    nutrihub08,
+    nutrihub09,
+    nutrihub10,
+    nutrihub11,
+    NutriHub_Logo,
 
 };
