@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./qualification.css";
+import { ScrollReveal } from '../animations/ScrollReveal';
 
 export const Qualification = () => {
     const [toggleState, setToggleState] = useState(1);
@@ -10,8 +11,11 @@ export const Qualification = () => {
 
   return (
     <section className="qualification section" id='qualification'>
-        <h2 className="section__title">Qualificações</h2>
-        <span className="section__subtitle">Minha jornada pessoal</span>
+        
+        <ScrollReveal direction='right' delay={0.5}>
+            <h2 className="section__title">Qualificações</h2>
+            <span className="section__subtitle">Minha jornada pessoal</span>
+        </ScrollReveal>
 
         <div className="qualification__container container">
             <div className="qualification__tabs">
@@ -40,7 +44,6 @@ export const Qualification = () => {
 
             {/* Data Qualifications */}
             <div className="qualification__sections">
-                {/* Educação */}
                 <div className={toggleState === 1 
                         ? "qualification__content qualification__content-active" 
                         : "qualification__content"
@@ -110,7 +113,6 @@ export const Qualification = () => {
                     </div>
                 </div>
  
-                {/* Experiencia */}
                 <div className={toggleState === 2 
                         ? "qualification__content qualification__content-active" 
                         : "qualification__content"
@@ -129,8 +131,6 @@ export const Qualification = () => {
                             <span className="qualification__rounder"></span>
                             <span className="qualification__line"></span>
                         </div>
-
-
                     </div>
 
                     <div className="qualification__data">
@@ -163,7 +163,6 @@ export const Qualification = () => {
                             <span className="qualification__rounder"></span>
                             <span className="qualification__line"></span>
                         </div>
-
 
                     </div>
                 </div>

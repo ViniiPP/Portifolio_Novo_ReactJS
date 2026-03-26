@@ -69,6 +69,11 @@
     width: 360px;
 }
 
+.contact__form .button {
+    width: 100%;
+    justify-content: center;
+}
+
 .contact__form-div {
     position: relative;
     margin-bottom: var(--mb-2);

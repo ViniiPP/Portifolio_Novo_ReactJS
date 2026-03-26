@@ -62,11 +62,13 @@
 }
 
 .services__modal-content {
-    width: 500px;
+    width: 500px; 
+    max-width: 90vw; 
     position: relative;
     background-color: var(--container-color);
     padding: 4.5rem 2.5rem 2.5rem;
     border-radius: 1.5rem;
+    box-sizing: border-box; 
 }
 
 .services__modal-close {
@@ -114,6 +116,11 @@
     font-size: var(--small-font-size);
 }
 
+.services__modal-description, 
+.services__modal-info {
+    word-break: break-word;
+}
+
 /* Ativando modal*/
 .active-modal {
     opacity: 1;
@@ -121,14 +128,14 @@
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For large devices */
+/* Telas grandes */
 @media screen and (max-width: 992px) {
     .services__container {
         grid-template-columns: repeat(3, 218px);
     }
   }
   
-  /* For medium devices */
+  /* Telas medias */
   @media screen and (max-width: 768px) {
     .services__container {
         grid-template-columns: repeat(2, 1fr);
@@ -143,17 +150,21 @@
     }
   }
   
-  @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
+    .services__container {
+        grid-template-columns: 1fr;
+    }
+    
     .services__modal-content {
-        padding: 4.5rem 1.5rem 2.5rem;
+        padding: 4.5rem 1.5rem 2.5rem; 
     }
 
     .services__modal-description {
         padding: 0;
     }
-  }
+}
   
-  /* For small devices */
+  /* Pequenas telas */
   @media screen and (max-width: 350px) {
     .services__container {
         grid-template-columns: max-content;

@@ -53,37 +53,36 @@ import {
     nutrihub01, nutrihub02, nutrihub03, nutrihub04, nutrihub05, nutrihub06, nutrihub07, nutrihub08, nutrihub09, nutrihub10, nutrihub11, NutriHub_Logo
 } from '../../assets';
 
-
 export const projectsData = [
     {
-      id: 1,
-      thumbnail: CuraLogo,
-      images: [CuraLogo, DashboardImg, DashaboardQrCodeImg, HardwareImg, HardwareImg02],
-      title: "Deck Hospitalar - Gestão e Monitoramento de Pacientes",
-      category: "Web",
-      description: "Sistema da Web para gerenciamento de pacientes hospitalares e monitoramento de ambiente em tempo real através de sensores de IoT, com funcionalidade completa do CRUD, front-end em HTML/CSS/JS e back-end em Java SpringBoot usando WebSockets.",
-      demo_link: "https://github.com/ViniiPP/Deck-Hospitalar",
-      github_link: "https://github.com/ViniiPP/Deck-Hospitalar"
+        id: 1,
+        thumbnail: CuraLogo,
+        images: [CuraLogo, DashboardImg, DashaboardQrCodeImg, HardwareImg, HardwareImg02],
+        title: "Deck Hospitalar - Gestão e Monitoramento de Pacientes",
+        category: "Web",
+        description: "Sistema da Web para gerenciamento de pacientes hospitalares e monitoramento de ambiente em tempo real através de sensores de IoT, com funcionalidade completa do CRUD, front-end em HTML/CSS/JS e back-end em Java SpringBoot usando WebSockets.",
+        demo_link: "https://github.com/ViniiPP/Deck-Hospitalar",
+        github_link: "https://github.com/ViniiPP/Deck-Hospitalar"
     },
     {
-      id: 2,
-      thumbnail: AgroSoja_Logo,
-      images: [AgroSoja_Logo, AgroSoja1, AgroSoja2, AgroSoja3, AgroSoja4, AgroSoja6, AgroSoja7, AgroSoja8, AgroSoja9, AgroSoja10, AgroSoja11, AgroSoja12, AgroSoja13, AgroSoja14, AgroSoja15, AgroSoja16],
-      title: "AgroSoja - Landing Page Automatizada para Agricultura de Precisão",
-      category: "Web",
-      description: "Landing page responsiva para empresa de agricultura de precisão, com design moderno e funcionalidade de formulário de contato integrado ao WhatsApp. Desenvolvida com NextJS, TailwindCSS, hospedada na Vercel, usando também Firebase para armazenamento de dados de Login. e Cloudinary para hospedagem de imagens.",
-      demo_link: "https://leading-page-agro.vercel.app",
-      github_link: "https://github.com/ViniiPP/landing-Page-Agro"
+        id: 2,
+        thumbnail: AgroSoja_Logo,
+        images: [AgroSoja_Logo, AgroSoja1, AgroSoja2, AgroSoja3, AgroSoja4, AgroSoja6, AgroSoja7, AgroSoja8, AgroSoja9, AgroSoja10, AgroSoja11, AgroSoja12, AgroSoja13, AgroSoja14, AgroSoja15, AgroSoja16],
+        title: "AgroSoja - Landing Page Automatizada para Agricultura de Precisão",
+        category: "Web",
+        description: "Landing page responsiva para empresa de agricultura de precisão, com design moderno e funcionalidade de formulário de contato integrado ao WhatsApp. Desenvolvida com NextJS, TailwindCSS, hospedada na Vercel, usando também Firebase para armazenamento de dados de Login. e Cloudinary para hospedagem de imagens.",
+        demo_link: "https://leading-page-agro.vercel.app",
+        github_link: "https://github.com/ViniiPP/landing-Page-Agro"
     },
     {
-      id: 3,
-      thumbnail: NutriHub_Logo,
-      images: [NutriHub_Logo, nutrihub01, nutrihub02, nutrihub03, nutrihub04, nutrihub05, nutrihub06, nutrihub07, nutrihub08, nutrihub09, nutrihub10, nutrihub11],
-      title: "NutriHub - Aplicativo de Nutrição e Dieta Personalizada - SaaS",
-      category: "Design",
-      description: "Aplicativo de Nutrição e Dieta Personalizada, com recursos de acompanhamento de dieta e nutrição, e gerenciamento de alimentos e refeições.",
-      demo_link: "https://www.linkedin.com/feed/update/urn:li:activity:7356757288855994368/",
-      github_link: "https://www.linkedin.com/feed/update/urn:li:activity:7356757288855994368/"
+        id: 3,
+        thumbnail: NutriHub_Logo,
+        images: [NutriHub_Logo, nutrihub01, nutrihub02, nutrihub03, nutrihub04, nutrihub05, nutrihub06, nutrihub07, nutrihub08, nutrihub09, nutrihub10, nutrihub11],
+        title: "NutriHub - Aplicativo de Nutrição e Dieta Personalizada - SaaS",
+        category: "Design",
+        description: "Aplicativo de Nutrição e Dieta Personalizada, com recursos de acompanhamento de dieta e nutrição, e gerenciamento de alimentos e refeições.",
+        demo_link: "https://www.linkedin.com/feed/update/urn:li:activity:7356757288855994368/",
+        github_link: "https://www.linkedin.com/feed/update/urn:li:activity:7356757288855994368/"
     },
     {
         id: 4,
@@ -116,14 +115,14 @@ export const projectsData = [
         github_link: "https://www.figma.com/design/gyYDoykifIYwDFXjRvEUbr/AEDES-TRACKER?node-id=0-1&t=MZFdZWRGxwqbB0DU-1"
     },
     {
-      id: 7,
-      thumbnail: ClimaImg,
-      images: [ClimaImg, Clima02Img],
-      title: "Aplicativo de Previsão do Tempo",
-      category: "Web",
-      description: "Um aplicativo que fornece previsões do tempo em tempo real, utilizando a API OpenWeatherMap. Desenvolvido com HTML, CSS e JavaScript, com foco na responsividade e usabilidade.",
-      demo_link: "https://viniipp.github.io/App-de-Previsao-do-Tempo/",
-      github_link: "https://github.com/ViniiPP/App-de-Previsao-do-Tempo"
+        id: 7,
+        thumbnail: ClimaImg,
+        images: [ClimaImg, Clima02Img],
+        title: "Aplicativo de Previsão do Tempo",
+        category: "Web",
+        description: "Um aplicativo que fornece previsões do tempo em tempo real, utilizando a API OpenWeatherMap. Desenvolvido com HTML, CSS e JavaScript, com foco na responsividade e usabilidade.",
+        demo_link: "https://viniipp.github.io/App-de-Previsao-do-Tempo/",
+        github_link: "https://github.com/ViniiPP/App-de-Previsao-do-Tempo"
     },
     {
         id: 8,
@@ -165,11 +164,11 @@ export const projectsData = [
         demo_link: "https://viniipp.github.io/Spotify/",
         github_link: "https://github.com/ViniiPP/Spotify"
     },
-  ];
+];
 
-  export const projectsNav = [
+export const projectsNav = [
     { name: 'Todos' },
     { name: 'Web' },
     { name: 'Mobile' },
     { name: 'Design' }
-  ];
+];

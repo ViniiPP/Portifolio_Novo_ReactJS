@@ -8,7 +8,7 @@ export const Data = () => {
         </h1>
         <h3 className="home__subtitle">Desenvolvedor de Software</h3>
         <p className="home__description">
-          Olá, sou Vinícius Pereira Polli, um jovem de 21 anos da cidade de Sananduva, Rio Grande do Sul. Atualmente, estou cursando Ciência da 
+          Olá, sou Vinícius Pereira Polli, nascido da cidade de Sananduva, Rio Grande do Sul. Atualmente, estou cursando Ciência da 
           Computação e sou movido pela curiosidade e pela busca constante por aprendizado.
         </p>
 
