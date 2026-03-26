@@ -15,23 +15,37 @@ export const Projects = () => {
     const dockRef = useRef(null);
     
     const imgRef = useRef(null);
-    const modalImgRef = useRef(null);
-    const modalOverlayRef = useRef(null); 
 
     const activeProject = projectsData[activeIndex];
     const imagesList = activeProject.images || [activeProject.thumbnail];
     const hasMultipleImages = imagesList.length > 1;
 
-    //  Animação de Troca de Imagem
+    // Animação de Troca de Imagem (Apenas na miniatura)
     const changeImage = useCallback((newIndex) => {
-        const targets = [imgRef.current, modalImgRef.current].filter(Boolean);
-        gsap.killTweensOf(targets); 
+        if (!imgRef.current) return;
+        gsap.killTweensOf(imgRef.current); 
 
-        const tl = gsap.timeline({ defaults: { ease: "sine.inOut" } });
-        tl.to(targets, { opacity: 0, duration: 0.15 });
-        tl.call(() => setCurrentImageIndex(newIndex));
-        tl.to(targets, { opacity: 1, duration: 0.2 }, "+=0.03");
+        gsap.to(imgRef.current, { 
+            opacity: 0, 
+            duration: 0.15,
+            ease: "power2.out",
+            onComplete: () => {
+                setCurrentImageIndex(newIndex);
+            }
+        });
     }, []);
+
+    useEffect(() => {
+        if (!imgRef.current) return;
+        gsap.killTweensOf(imgRef.current); 
+
+        gsap.to(imgRef.current, { 
+            opacity: 1, 
+            duration: 0.25, 
+            ease: "power2.inOut",
+            delay: 0.05 
+        });
+    }, [currentImageIndex]);
 
     const nextImage = (e) => {
         if(e) e.stopPropagation(); 
@@ -45,42 +59,7 @@ export const Projects = () => {
         changeImage(prevIdx); 
     };
 
-    const openModal = () => {
-        document.body.style.overflow = 'hidden'; 
-        
-        gsap.killTweensOf(modalOverlayRef.current);
-        gsap.killTweensOf(".image-modal-content");
-        
-        gsap.fromTo(modalOverlayRef.current,
-            { opacity: 0, visibility: "hidden" },
-            { opacity: 1, visibility: "visible", duration: 0.3, ease: "power2.out" }
-        );
-
-        gsap.fromTo(".image-modal-content",
-            { scale: 0.85, opacity: 0 },
-            { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(1.5)", delay: 0.05 }
-        );
-    }
-
-    const closeModal = () => {
-        document.body.style.overflow = 'auto'; 
-
-        gsap.killTweensOf(modalOverlayRef.current);
-        gsap.killTweensOf(".image-modal-content");
-
-        gsap.to(".image-modal-content", { scale: 0.9, opacity: 0, duration: 0.2, ease: "power2.in" });
-
-        gsap.to(modalOverlayRef.current, { 
-            opacity: 0, 
-            duration: 0.3, 
-            ease: "power2.inOut",
-            onComplete: () => {
-                gsap.set(modalOverlayRef.current, { visibility: "hidden" });
-            }
-        });
-    }
-
-    //Animações de Scroll
+    // Animações de Scroll
     useEffect(() => {
         let ctx = gsap.context(() => {
             gsap.fromTo(".projects-section-title", 
@@ -107,15 +86,12 @@ export const Projects = () => {
 
         return () => {
             ctx.revert();
-            document.body.style.overflow = 'auto'; // Limpeza para evitar erros
         };
     }, []);
 
     // Efeito Suave ao Trocar de PROJETO (Dock)
     useEffect(() => {
         setCurrentImageIndex(0);
-        const targets = [imgRef.current, modalImgRef.current].filter(Boolean);
-        gsap.set(targets, { opacity: 1 }); 
 
         gsap.fromTo(".showcase__content-fade", 
             { opacity: 0 }, 
@@ -135,7 +111,8 @@ export const Projects = () => {
                     <div className="showcase__content-fade">
                         <div className="showcase__content-grid">
 
-                            <div className="showcase__img-wrapper clickable" onClick={openModal}>
+                            {/* Wrapper da imagem limpo (sem onClick de modal) */}
+                            <div className="showcase__img-wrapper">
                                 <img 
                                     ref={imgRef}
                                     src={imagesList[currentImageIndex]} 
@@ -194,38 +171,6 @@ export const Projects = () => {
                     </div>
                 </div>
 
-            </div>
-
-            {/* Modal de Imagem: Sempre Renderizado Invisíve */}
-            <div 
-                className="image-modal-overlay" 
-                ref={modalOverlayRef} 
-                onClick={closeModal} 
-                style={{ visibility: "hidden", opacity: 0 }} 
-            >
-                <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
-                    <button className="image-modal-close" onClick={closeModal}>
-                        <i className="bx bx-x"></i>
-                    </button>
-
-                    <img 
-                        ref={modalImgRef}
-                        src={imagesList[currentImageIndex]} 
-                        alt={`${activeProject.title} Ampliada`} 
-                        className="image-modal-img framed-image" 
-                    />
-                    
-                    {hasMultipleImages && (
-                        <>
-                            <button className="image-modal-arrow image-modal-arrow--prev" onClick={prevImage}>
-                                <i className="bx bx-chevron-left"></i>
-                            </button>
-                            <button className="image-modal-arrow image-modal-arrow--next" onClick={nextImage}>
-                                <i className="bx bx-chevron-right"></i>
-                            </button>
-                        </>
-                    )}
-                </div>
             </div>
         </section>
     );
