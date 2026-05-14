@@ -14,49 +14,18 @@ export const Projects = () => {
     const showcaseRef = useRef(null);
     const dockRef = useRef(null);
     
-    const imgRef = useRef(null);
-
     const activeProject = projectsData[activeIndex];
     const imagesList = activeProject.images || [activeProject.thumbnail];
     const hasMultipleImages = imagesList.length > 1;
 
-    // Animação de Troca de Imagem (Apenas na miniatura)
-    const changeImage = useCallback((newIndex) => {
-        if (!imgRef.current) return;
-        gsap.killTweensOf(imgRef.current); 
-
-        gsap.to(imgRef.current, { 
-            opacity: 0, 
-            duration: 0.15,
-            ease: "power2.out",
-            onComplete: () => {
-                setCurrentImageIndex(newIndex);
-            }
-        });
-    }, []);
-
-    useEffect(() => {
-        if (!imgRef.current) return;
-        gsap.killTweensOf(imgRef.current); 
-
-        gsap.to(imgRef.current, { 
-            opacity: 1, 
-            duration: 0.25, 
-            ease: "power2.inOut",
-            delay: 0.05 
-        });
-    }, [currentImageIndex]);
-
     const nextImage = (e) => {
         if(e) e.stopPropagation(); 
-        const nextIdx = (currentImageIndex + 1) % imagesList.length;
-        changeImage(nextIdx); 
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imagesList.length);
     };
 
     const prevImage = (e) => {
         if(e) e.stopPropagation(); 
-        const prevIdx = (currentImageIndex - 1 + imagesList.length) % imagesList.length;
-        changeImage(prevIdx); 
+        setCurrentImageIndex((prevIndex) => (prevIndex - 1 + imagesList.length) % imagesList.length);
     };
 
     // Animações de Scroll
@@ -113,12 +82,25 @@ export const Projects = () => {
 
                             {/* Wrapper da imagem limpo (sem onClick de modal) */}
                             <div className="showcase__img-wrapper">
-                                <img 
-                                    ref={imgRef}
-                                    src={imagesList[currentImageIndex]} 
-                                    alt={`${activeProject.title} - imagem ${currentImageIndex + 1}`} 
-                                    className="showcase__img"
-                                />
+                                <div 
+                                    className="showcase__img-slider" 
+                                    style={{ 
+                                        display: 'flex', 
+                                        height: '100%', 
+                                        transition: 'transform 0.4s ease-in-out', 
+                                        transform: `translateX(-${currentImageIndex * 100}%)` 
+                                    }}
+                                >
+                                    {imagesList.map((imgSrc, index) => (
+                                        <img 
+                                            key={index}
+                                            src={imgSrc} 
+                                            alt={`${activeProject.title} - imagem ${index + 1}`} 
+                                            className="showcase__img"
+                                            style={{ flexShrink: 0, width: '100%', height: '100%', objectFit: 'contain' }}
+                                        />
+                                    ))}
+                                </div>
 
                                 {hasMultipleImages && (
                                     <>
