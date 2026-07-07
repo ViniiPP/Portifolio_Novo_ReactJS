@@ -202,8 +202,8 @@ const ProjectDetailPage = () => {
             </section>
           )}
 
-        </div>{/* /.project-detail__body */}
-      </div>{/* /.project-detail */}
+        </div>
+      </div>
 
       {/* Modal / Lightbox para a Imagem */}
       {selectedImage && (
