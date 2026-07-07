@@ -1,0 +1,169 @@
+/* =========================================================
+   ProjectCard.css — Estilos do card de projeto reutilizável
+   ========================================================= */
+
+.project-card {
+  position: relative;
+  background-color: var(--container-color);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1),
+              box-shadow 0.35s cubic-bezier(0.25, 1, 0.5, 1),
+              border-color 0.3s ease;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* Animação de entrada */
+  animation: cardFadeIn 0.5s ease both;
+}
+
+@keyframes cardFadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.project-card:hover,
+.project-card:focus-visible {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.project-card:focus-visible {
+  outline: 2px solid var(--title-color);
+  outline-offset: 3px;
+}
+
+/* ── Imagem ── */
+.project-card__img-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: hsl(var(--hue), var(--sat), 94%);
+}
+
+.project-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  display: block;
+}
+
+.project-card:hover .project-card__img {
+  transform: scale(1.06);
+}
+
+/* ── Overlay CTA ── */
+.project-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(2px);
+}
+
+.project-card:hover .project-card__overlay,
+.project-card:focus-visible .project-card__overlay {
+  opacity: 1;
+}
+
+.project-card__cta {
+  color: #fff;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  letter-spacing: 0.5px;
+  padding: 0.5rem 1.25rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 2rem;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover .project-card__cta {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
+}
+
+/* ── Body ── */
+.project-card__body {
+  padding: 1.25rem 1.5rem 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-card__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  line-height: 1.25;
+  margin: 0;
+}
+
+.project-card__desc {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  /* Clamp a 3 linhas */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+/* ── Stack tags ── */
+.project-card__stacks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: auto;
+  padding-top: 0.25rem;
+}
+
+.project-card__stack-tag {
+  font-size: var(--tiny-font-size);
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+  background-color: hsl(var(--hue), var(--sat), 93%);
+  padding: 0.2rem 0.6rem;
+  border-radius: 2rem;
+  letter-spacing: 0.3px;
+  transition: background 0.2s ease;
+}
+
+.project-card__stack-tag--more {
+  color: var(--text-color);
+}
+
+/* ── Mobile ── */
+@media screen and (max-width: 576px) {
+  .project-card__desc {
+    display: none; /* Remove descrição no mobile para 2 colunas não ficarem espremidas */
+  }
+
+  .project-card__body {
+    padding: 0.875rem 1rem 1rem;
+    gap: 0.35rem;
+  }
+
+  .project-card__title {
+    font-size: var(--normal-font-size);
+  }
+
+  .project-card__stacks {
+    padding-top: 0.1rem;
+  }
+}

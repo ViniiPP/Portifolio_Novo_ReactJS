@@ -1,7 +1,5 @@
 import React from 'react'
 import "./about.css";
-import img_perfil from "../../assets/img_perfil.jpg";
-import CV from "../../assets/CV_VINICIUS_PEREIRA_POLLI.pdf";
 import { Info } from './Info';
 import { ScrollReveal } from '../animations/ScrollReveal';
 
@@ -15,7 +13,7 @@ export const About = () => {
 
         <div className="about__container container grid">
             <ScrollReveal direction="left" delay={0.3}>
-                <img src={img_perfil} alt="Imagem de Perfil de Vinícius" className="about__img"/>
+                <img src="/assets/img_perfil.jpg" alt="Imagem de Perfil de Vinícius" className="about__img"/>
             </ScrollReveal>
             
             <div className="about__data">
@@ -31,7 +29,7 @@ export const About = () => {
                     </p>
 
 
-                    <a download="" href={CV} className="button button--flex">
+                    <a download="" href="/assets/CV_VINICIUS_PEREIRA_POLLI.pdf" className="button button--flex">
                         Download CV
                         <svg
                             class="button__icon"

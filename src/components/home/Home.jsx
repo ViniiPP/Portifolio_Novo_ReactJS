@@ -11,7 +11,7 @@ export const Home = () => {
             <div className="home__content grid">
                 <Social />
 
-                <div className="home__img" alt="Imagem de Perfil de Vinícius"></div>
+                <div className="home__img" alt="Imagem de Perfil de Vinícius" style={{ backgroundImage: "url('/assets/img_capa.jpeg')" }}></div>
 
                 <Data />
             </div>

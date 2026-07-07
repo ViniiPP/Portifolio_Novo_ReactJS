@@ -1,0 +1,127 @@
+/* =========================================================
+   ProjectsPage.css — Página de listagem de todos os projetos
+   ========================================================= */
+
+.projects-page {
+  min-height: 100vh;
+  background-color: var(--body-color);
+  padding-bottom: 4rem;
+}
+
+/* ── Header ── */
+.projects-page__header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: rgba(var(--body-color-rgb, 250, 250, 250), 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  animation: headerSlideDown 0.4s ease both;
+}
+
+@keyframes headerSlideDown {
+  from { opacity: 0; transform: translateY(-16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Botão de voltar — apenas ícone, minimalista */
+.projects-page__back-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--container-color);
+  color: var(--title-color);
+  font-size: 1.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.25s ease,
+              transform 0.25s ease,
+              box-shadow 0.25s ease;
+  flex-shrink: 0;
+}
+
+.projects-page__back-btn:hover {
+  background-color: var(--title-color);
+  color: var(--container-color);
+  transform: translateX(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.projects-page__back-btn:focus-visible {
+  outline: 2px solid var(--title-color);
+  outline-offset: 2px;
+}
+
+.projects-page__title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.projects-page__title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  margin: 0;
+  line-height: 1;
+}
+
+.projects-page__subtitle {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color);
+  margin: 0;
+}
+
+/* ── Main ── */
+.projects-page__main {
+  padding-top: 2.5rem;
+}
+
+/* ── Grid: Desktop 3 colunas ── */
+.projects-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* ── Card com animação escalonada ── */
+.projects-page__card-wrapper {
+  height: 100%;
+  animation: cardPageIn 0.5s ease both;
+}
+
+@keyframes cardPageIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Tablet: 2 colunas ── */
+@media screen and (max-width: 992px) {
+  .projects-page__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── Mobile: 2 colunas ── */
+@media screen and (max-width: 576px) {
+  .projects-page__header {
+    padding: 0.875rem 1rem;
+  }
+
+  .projects-page__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .projects-page__title {
+    font-size: var(--h3-font-size);
+  }
+}

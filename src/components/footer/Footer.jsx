@@ -1,27 +1,32 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom';
 import './footer.css'
 
 export const Footer = () => {
     const currentYear = new Date().getFullYear();
+    const location = useLocation();
+    const isHome = location.pathname === '/';
 
   return (
     <footer className="footer">
         <div className="footer__container container">
             <h1 className="footer__title">Vinícius</h1>
 
-            <ul className="footer__list">
-                <li>
-                    <a href="#about" className="footer__link">Sobre</a>
-                </li>
+            {isHome && (
+                <ul className="footer__list">
+                    <li>
+                        <a href="#about" className="footer__link">Sobre</a>
+                    </li>
 
-                <li>
-                    <a href="#projects" className="footer__link">Projetos</a>
-                </li>
+                    <li>
+                        <a href="#projects" className="footer__link">Projetos</a>
+                    </li>
 
-                <li>
-                    <a href="#services" className="footer__link">Serviços</a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="#services" className="footer__link">Serviços</a>
+                    </li>
+                </ul>
+            )}
 
             <div className="footer__social">
                 <a 

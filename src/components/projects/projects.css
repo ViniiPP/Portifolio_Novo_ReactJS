@@ -1,252 +1,78 @@
-.projects__showcase {
-    background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    border-radius: 1.5rem;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.04);
-    margin-bottom: 2.5rem; 
-    overflow: hidden;
-    position: relative;
-    min-height: 400px; 
-    padding: 2rem;
+/* =========================================================
+   projects.css — Seção de destaques de projetos (Home)
+   ========================================================= */
+
+/* ── Grid de destaques ── */
+.projects-featured__grid {
+  display: grid;
+  /* Desktop: 3 colunas */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
-.showcase__content-fade {
-    width: 100%;
-    height: 100%;
-    opacity: 1; 
+/* ── Botão CTA ── */
+.projects-featured__cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
-.showcase__content-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 2.5rem;
-    align-items: center;
+.projects-featured__cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background-color: var(--title-color);
+  color: var(--container-color);
+  border: none;
+  border-radius: 3rem;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  font-family: var(--body-font);
+  cursor: pointer;
+  transition: background-color 0.3s ease,
+              transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+              box-shadow 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.2px;
 }
 
-/* Wrapper da Imagem  */
-.showcase__img-wrapper {
-    width: 100%;
-    height: 320px; 
-    border-radius: 1rem;
-    overflow: hidden;
-    position: relative; 
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.06);
-    background-color: var(--container-color); 
+.projects-featured__cta-btn i {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
 }
 
-.showcase__img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; 
-    object-position: center;
-    will-change: opacity;
-    display: block;
+.projects-featured__cta-btn:hover {
+  background-color: var(--title-color-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
 }
 
-/* Setas do Carrossel */
-.showcase__arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    color: var(--title-color);
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 1.5rem;
-    z-index: 5;
-    transition: opacity 0.3s ease, background 0.3s ease, transform 0.2s ease;
-    opacity: 0; 
+.projects-featured__cta-btn:hover i {
+  transform: translateX(4px);
 }
 
-.showcase__img-wrapper:hover .showcase__arrow {
-    opacity: 1;
+.projects-featured__cta-btn:focus-visible {
+  outline: 2px solid var(--title-color);
+  outline-offset: 3px;
 }
 
-.showcase__arrow:hover {
-    background: rgba(255, 255, 255, 1);
-    transform: translateY(-50%) scale(1.05);
-}
-
-.showcase__arrow--prev { left: 10px; }
-.showcase__arrow--next { right: 10px; }
-
-.showcase__paginator {
-    position: absolute;
-    bottom: 8px;
-    right: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 2px 8px;
-    border-radius: 10px;
-    font-size: 0.7rem;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    opacity: 0;
-}
-.showcase__img-wrapper:hover .showcase__paginator { opacity: 1; }
-
-.showcase__data {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 250px; 
-}
-
-.showcase__category {
-    font-size: var(--small-font-size);
-    color: var(--text-color-light);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: var(--font-medium);
-    margin-bottom: 0.4rem;
-    display: block;
-}
-
-.showcase__title {
-    font-size: var(--h2-font-size);
-    font-weight: var(--font-semi-bold);
-    color: var(--title-color);
-    margin-bottom: 0.8rem;
-    line-height: 1.2;
-}
-
-.showcase__description {
-    font-size: var(--normal-font-size);
-    color: var(--text-color);
-    margin-bottom: 1.8rem;
-    line-height: 1.5;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-.showcase__links {
-    display: flex;
-    gap: 0.75rem;
-}
-
-.button--small {
-    padding: 0.75rem 1rem;
-    font-size: var(--small-font-size);
-}
-
-.button--transparent {
-    background-color: transparent;
-    color: var(--title-color);
-    border: 1px solid rgba(0,0,0,0.15);
-}
-
-.button--transparent:hover {
-    background-color: var(--title-color);
-    color: var(--container-color);
-    border-color: var(--title-color);
-}
-
-
-/* Dock de projetos */
-.projects__dock-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 0.5rem 0 1rem 0;
-}
-
-.projects__dock {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    padding: 0.8rem;
-    background-color: var(--container-color);
-    border-radius: 2rem;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
-    
-    max-width: 100%;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-}
-
-.projects__dock::-webkit-scrollbar { display: none; }
-.projects__dock { -ms-overflow-style: none; scrollbar-width: none; }
-
-.dock__item {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    border-radius: 12px;
-    flex-shrink: 0;
-    cursor: pointer;
-    transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
-    scroll-snap-align: center;
-    border: 2px solid transparent;
-}
-
-.dock__item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    pointer-events: none;
-}
-
-.dock__item:hover {
-    transform: translateY(-6px) scale(1.1);
-    z-index: 10;
-}
-
-.dock__item.active-dock {
-    transform: translateY(-4px);
-    border-color: var(--title-color);
-}
-
-.dock__indicator {
-    position: absolute;
-    bottom: -9px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 5px;
-    height: 5px;
-    background-color: var(--title-color);
-    border-radius: 50%;
-}
-
-
-/*=============== BREAKPOINTS ===============*/
+/* ── Tablet: 2 colunas ── */
 @media screen and (max-width: 992px) {
-    .showcase__content-grid {
-        grid-template-columns: 1fr; 
-        gap: 1.5rem;
-    }
-    .showcase__img-wrapper { height: 250px; }
-    .showcase__data {
-        min-height: 200px;
-        align-items: center;
-        text-align: center;
-    }
+  .projects-featured__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
+/* ── Mobile: 2 colunas ── */
 @media screen and (max-width: 576px) {
-    .projects__showcase {
-        padding: 1.25rem;
-        min-height: 380px;
-    }
-    .showcase__img-wrapper { height: 180px; }
-    .showcase__arrow {
-        width: 30px; height: 30px; font-size: 1.2rem; opacity: 0.8; 
-    }
-    .showcase__title { font-size: var(--h3-font-size); }
-    .projects__dock {
-        padding: 0.6rem; gap: 0.4rem; border-radius: 1.5rem;
-    }
-    .dock__item { width: 42px; height: 42px; }
+  .projects-featured__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .projects-featured__cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
