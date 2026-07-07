@@ -24,9 +24,9 @@ const ScrollUp = () => {
   };
 
   return (
-    <a href="#" onClick={scrollToTop} className="scrollup" aria-label="Voltar ao topo">
+    <button onClick={scrollToTop} className="scrollup" aria-label="Voltar ao topo">
         <i className="uil uil-arrow-up scrollup__icon"></i>
-    </a>
+    </button>
   )
 }
 

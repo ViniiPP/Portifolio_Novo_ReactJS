@@ -56,14 +56,14 @@ export const Header = () => {
               </a> 
             </li>
 
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <a href="#services" onClick={ () => setActiveNav('#services') } 
                 className={activeNav === "#services" 
                   ? "nav__link active-link" 
                   : "nav__link"}>
                 <i className="uil uil-briefcase-alt nav__icon"></i> Serviços
               </a>
-            </li>
+            </li> */}
 
             <li className="nav__item">
               <a href="#qualification" onClick={ () => setActiveNav('#qualification') } 
