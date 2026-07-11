@@ -148,6 +148,23 @@ export const projectsData = [
     isFeatured: true,
   },
   {
+    id: 'Tuberculose-Prediction',
+    title: 'Tuberculosis LTFU Prediction',
+    shortDescription:
+      'Modelo de Machine Learning para prever o risco de abandono do tratamento de Tuberculose, integrado a uma API FastAPI e Dashboard clínico.',
+    fullDescription:
+      'Projeto de Inteligência Artificial para a saúde pública que prevê o risco de abandono (Loss to Follow-up) no tratamento da Tuberculose, treinando modelos (Redes Neurais e HistGradientBoost) em dados reais do SINAN (mais de 500 mil registros). O projeto é estruturado de ponta a ponta: do pré-processamento focado em evitar target leakage à exposição do modelo vencedor via API REST (FastAPI) na nuvem Render. Conta ainda com uma interface web para uso da equipe médica em tempo real e um dashboard em PowerBI para auditoria e acompanhamento dinâmico de indicadores epidemiológicos.',
+    coverImage: '/assets/ltfu_logoBlack.png',
+    gallery: ['/assets/ltfu_1.png', '/assets/ltfu_2.png', '/assets/ltfu_3.png', '/assets/ltfu_4.png', '/assets/ltfu_5.png', '/assets/ltfu_6.png', '/assets/ltfu_7.png', '/assets/ltfu_8.png'],
+    stacks: ['HTML', 'CSS', 'JavaScript', 'FastAPI', 'Machine Learning', 'Python', 'PowerBI'],
+    links: {
+      github: 'https://github.com/ViniiPP/Tuberculose-Prediction',
+      demo: 'https://tuberculose-prediction.onrender.com',
+      figma: null,
+    },
+    isFeatured: true,
+  },
+  {
     id: 'previsao-tempo',
     title: 'Aplicativo de Previsão do Tempo',
     shortDescription:
@@ -233,18 +250,18 @@ export const projectsData = [
     isFeatured: false,
   },
   {
-    id: 'Tuberculose-Prediction',
-    title: 'Tuberculosis LTFU Prediction',
+    id: 'chat-websocket',
+    title: 'Chat Websocket',
     shortDescription:
-      'Modelo de Machine Learning para prever o risco de abandono do tratamento de Tuberculose, integrado a uma API FastAPI e Dashboard clínico.',
+      'Aplicação de chat em tempo real com WebSockets, interface no estilo WhatsApp e design Glassmorphism responsivo.',
     fullDescription:
-      'Projeto de Inteligência Artificial para a saúde pública que prevê o risco de abandono (Loss to Follow-up) no tratamento da Tuberculose, treinando modelos (Redes Neurais e HistGradientBoost) em dados reais do SINAN (mais de 500 mil registros). O projeto é estruturado de ponta a ponta: do pré-processamento focado em evitar target leakage à exposição do modelo vencedor via API REST (FastAPI) na nuvem Render. Conta ainda com uma interface web para uso da equipe médica em tempo real e um dashboard em PowerBI para auditoria e acompanhamento dinâmico de indicadores epidemiológicos.',
-    coverImage: '/assets/ltfu_logoBlack.png',
-    gallery: ['/assets/ltfu_1.png', '/assets/ltfu_2.png', '/assets/ltfu_3.png', '/assets/ltfu_4.png', '/assets/ltfu_5.png', '/assets/ltfu_6.png', '/assets/ltfu_7.png', '/assets/ltfu_8.png'],
-    stacks: ['HTML', 'CSS', 'JavaScript', 'FastAPI', 'Machine Learning', 'Python', 'PowerBI'],
+      'Chat em tempo real construído com HTML, CSS e JavaScript no frontend e um servidor Node.js com WebSockets no backend. A interface adota o padrão visual Glassmorphism, imagem de fundo responsiva e sons de notificação. A comunicação é bidirecional e instantânea via protocolo WebSocket, sem necessidade de recarregar a página. O layout é totalmente responsivo, adaptado para mobile, tablet e desktop.',
+    coverImage: '/assets/chatwebsocket1.png',
+    gallery: ['/assets/chatwebsocket2.png', '/assets/chatwebsocket1.png', '/assets/chatwebsocket3.png'],
+    stacks: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'WebSockets', 'Express'],
     links: {
-      github: 'https://github.com/ViniiPP/Tuberculose-Prediction',
-      demo: 'https://tuberculose-prediction.onrender.com',
+      github: 'https://github.com/ViniiPP/Chat-Websocket',
+      demo: 'https://chat-websocket-rr3f.onrender.com',
       figma: null,
     },
     isFeatured: true,
