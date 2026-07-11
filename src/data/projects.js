@@ -256,7 +256,7 @@ export const projectsData = [
       'Aplicação de chat em tempo real com WebSockets, interface no estilo WhatsApp e design Glassmorphism responsivo.',
     fullDescription:
       'Chat em tempo real construído com HTML, CSS e JavaScript no frontend e um servidor Node.js com WebSockets no backend. A interface adota o padrão visual Glassmorphism, imagem de fundo responsiva e sons de notificação. A comunicação é bidirecional e instantânea via protocolo WebSocket, sem necessidade de recarregar a página. O layout é totalmente responsivo, adaptado para mobile, tablet e desktop.',
-    coverImage: '/assets/chatwebsocket1.png',
+    coverImage: '/assets/logo_chatwebsocket.png',
     gallery: ['/assets/chatwebsocket2.png', '/assets/chatwebsocket1.png', '/assets/chatwebsocket3.png'],
     stacks: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'WebSockets', 'Express'],
     links: {
