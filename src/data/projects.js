@@ -148,6 +148,23 @@ export const projectsData = [
     isFeatured: true,
   },
   {
+    id: 'chat-websocket',
+    title: 'Chat Websocket',
+    shortDescription:
+      'Aplicação de chat em tempo real com WebSockets, interface no estilo WhatsApp e design Glassmorphism responsivo.',
+    fullDescription:
+      'Chat em tempo real construído com HTML, CSS e JavaScript no frontend e um servidor Node.js com WebSockets no backend. A interface adota o padrão visual Glassmorphism, imagem de fundo responsiva e sons de notificação. A comunicação é bidirecional e instantânea via protocolo WebSocket, sem necessidade de recarregar a página. O layout é totalmente responsivo, adaptado para mobile, tablet e desktop.',
+    coverImage: '/assets/logo_chatwebsocket.png',
+    gallery: ['/assets/chatwebsocket2.png', '/assets/chatwebsocket1.png', '/assets/chatwebsocket3.png'],
+    stacks: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'WebSockets', 'Express'],
+    links: {
+      github: 'https://github.com/ViniiPP/Chat-Websocket',
+      demo: 'https://chat-websocket-rr3f.onrender.com',
+      figma: null,
+    },
+    isFeatured: true,
+  },
+  {
     id: 'Tuberculose-Prediction',
     title: 'Tuberculosis LTFU Prediction',
     shortDescription:
@@ -248,22 +265,5 @@ export const projectsData = [
       figma: null,
     },
     isFeatured: false,
-  },
-  {
-    id: 'chat-websocket',
-    title: 'Chat Websocket',
-    shortDescription:
-      'Aplicação de chat em tempo real com WebSockets, interface no estilo WhatsApp e design Glassmorphism responsivo.',
-    fullDescription:
-      'Chat em tempo real construído com HTML, CSS e JavaScript no frontend e um servidor Node.js com WebSockets no backend. A interface adota o padrão visual Glassmorphism, imagem de fundo responsiva e sons de notificação. A comunicação é bidirecional e instantânea via protocolo WebSocket, sem necessidade de recarregar a página. O layout é totalmente responsivo, adaptado para mobile, tablet e desktop.',
-    coverImage: '/assets/logo_chatwebsocket.png',
-    gallery: ['/assets/chatwebsocket2.png', '/assets/chatwebsocket1.png', '/assets/chatwebsocket3.png'],
-    stacks: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'WebSockets', 'Express'],
-    links: {
-      github: 'https://github.com/ViniiPP/Chat-Websocket',
-      demo: 'https://chat-websocket-rr3f.onrender.com',
-      figma: null,
-    },
-    isFeatured: true,
   },
 ];
