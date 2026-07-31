@@ -66,6 +66,25 @@ export const projectsData = [
     isFeatured: true,
   },
   {
+    id: 'sendly',
+    title: 'Sendly — Transferência p2p no navegador',
+    shortDescription:
+      'Sendly é uma aplicação web para transferência direta de arquivos entre dispositivos via navegador, utilizando tecnologia P2P criptografada, sem necessidade de cadastro ou servidores intermediários.',
+    fullDescription:
+      'O Sendly permite compartilhar arquivos de qualquer tamanho diretamente entre dois navegadores usando WebRTC. A transferência ocorre de ponto a ponto (P2P), garantindo privacidade total, pois nenhum dado é armazenado em servidores. Basta gerar um código temporário de acesso para conectar os dispositivos e iniciar o envio de forma rápida, segura e sem instalação de softwares.',
+    coverImage: '/assets/sendly_Logo.png',
+    gallery: [
+      '/assets/sendly01.png', '/assets/sendly02.png', '/assets/sendly03.png', '/assets/sendly03.png', '/assets/sendly04.png', '/assets/sendly05.png', '/assets/sendly06.png', '/assets/sendly07.png', '/assets/sendly08.png', '/assets/sendly09.png', '/assets/sendly10.png'
+    ],
+    stacks: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Node.js', 'Express', 'WebRTC DataChannel (transferência P2P)','Socket.io', 'Render (Backend)', 'Vercel (Frontend)'],
+    links: {
+      github: 'https://github.com/ViniiPP/SendLy-Transferencia-p2p',
+      demo: 'https://sendlytransfer.vercel.app',
+      figma: null,
+    },
+    isFeatured: true,
+  },
+  {
     id: 'nota-fiscal-gaucha',
     title: 'Nota Fiscal Gaúcha',
     shortDescription:
